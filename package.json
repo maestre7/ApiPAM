@@ -1,0 +1,19 @@
+{
+  "name": "apipam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maestre7/ApiPAM.git"
+  },
+  "author": "Alfredo Ruiz Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maestre7/ApiPAM/issues"
+  },
+  "homepage": "https://github.com/maestre7/ApiPAM#readme"
+}
