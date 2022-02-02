@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/maestre7/ApiPAM/issues"
   },
-  "homepage": "https://github.com/maestre7/ApiPAM#readme"
+  "homepage": "https://github.com/maestre7/ApiPAM#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
