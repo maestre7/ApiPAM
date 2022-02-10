@@ -1,7 +1,6 @@
 
-const result = {
-    "page": 1,
-    "results": [
+
+const results = [
       {
         "profile_path": "/2daC5DeXqwkFND0xxutbnSVKN6c.jpg",
         "adult": false,
@@ -990,7 +989,7 @@ const result = {
             "vote_average": 6.46
           }
         ],
-        "name": "Taylor Bradley",
+        "name": "Charlotte Rampling",
         "popularity": 1.315
       },
       {
@@ -1088,19 +1087,24 @@ const result = {
             "vote_average": 0
           }
         ],
-        "name": "Bradley Hemmings",
+        "name": "Laura Linney",
         "popularity": 1.273
       }
-    ],
+    ]
+    
+
+const result = {
+    "page": 1,
     "total_results": 363,
+    "results": [],
     "total_pages": 19
   }
 
 function getsearchperson(req, res){
-    console.log(req.query);
-    for (let p in result.results) {
-      if (req.query === result.results[p].name){
-        console.log(result.results[p].name);
+    result.results[0] = {};
+    for (let p in results) {
+      if (req.query.name === results[p].name){
+        result.results[0]= results[p];
       }
     }
     res.status(200).json(result);
